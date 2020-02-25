@@ -9,6 +9,10 @@ FNDLOAD apps/<<password>>  0 Y UPLOAD $FND_TOP/patch/115/import/afsload.lct XXFN
 ### Function → Responsibility Assignment
 Assign function created above to responsibility of your choice.
 
+### Lookup for Action Type Lovs
+FNDLOAD apps/<<password>> O Y DOWNLOAD $FND_TOP/patch/115/import/aflvmlu.lct XX_ACTION_RESP_USR_CREATE.ldt FND_LOOKUP_TYPE APPLICATION_SHORT_NAME="SYSADMIN" LOOKUP_TYPE="XX_ACTION_RESP_USR_CREATE"
+
+ 
 
 
 # Download Instructions after modifications
@@ -19,4 +23,9 @@ FNDLOAD apps/<<password>> 0 Y DOWNLOAD $BNE_TOP/patch/115/import/bneintegrator.l
   
 ### Oracle Function
 
-FNDLOAD apps/apps 0 Y DOWNLOAD $FND_TOP/patch/115/import/afsload.lct XXFND_USR_RESP_ADI_FUNC.ldt FUNCTION FUNCTION_NAME="XX_FND_USR_RESP_ADI"
+FNDLOAD apps/<<password>> 0 Y DOWNLOAD $FND_TOP/patch/115/import/afsload.lct XXFND_USR_RESP_ADI_FUNC.ldt FUNCTION FUNCTION_NAME="XX_FND_USR_RESP_ADI"
+
+
+### Lookup for Action Type Lovs
+FNDLOAD apps/<<password>> O Y UPLOAD $FND_TOP/patch/115/import/aflvmlu.lct XX_ACTION_RESP_USR_CREATE.ldt UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
+
