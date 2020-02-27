@@ -10,6 +10,8 @@ FNDLOAD apps/<<password>>  0 Y UPLOAD $FND_TOP/patch/115/import/afsload.lct XXFN
 ### Lookup for Action Type Lovs
 FNDLOAD apps/<<password>> O Y UPLOAD $FND_TOP/patch/115/import/aflvmlu.lct XX_ACTION_RESP_USR_CREATE_LOOKUP.ldt UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
 
+### Deploy PL/SQL Package
+xxfnd_load_pkg.sql
 
 ### Function → Responsibility Assignment
 Assign function created above to responsibility menu of your choice.
