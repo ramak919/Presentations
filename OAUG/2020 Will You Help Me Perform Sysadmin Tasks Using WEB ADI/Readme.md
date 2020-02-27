@@ -1,7 +1,7 @@
 # Upload instructions
 
 ### Integrator  >  Integrator Name: 
-FNDLOAD apps/<<password>> 0 Y UPLOAD $BNE_TOP/patch/115/import/bneintegrator.lct XXFND_USR_RESPONSIBILITY.ldt UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
+FNDLOAD apps/<<password>> 0 Y UPLOAD $BNE_TOP/patch/115/import/bneintegrator.lct XXFND_USR_RESPONSIBILITY_XINTG.ldt UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
 
 ### Function    > Function Name:  XX ADI User Responsibility
 FNDLOAD apps/<<password>>  0 Y UPLOAD $FND_TOP/patch/115/import/afsload.lct XXFND_USR_RESP_ADI_FUNC.ldt
@@ -19,7 +19,7 @@ Assign function created above to responsibility menu of your choice.
 
 ### Intergrator & Layouts
 
-FNDLOAD apps/<<password>> 0 Y DOWNLOAD $BNE_TOP/patch/115/import/bneintegrator.lct XXFND_USR_RESPONSIBILITY.ldt BNE_INTEGRATORS INTEGRATOR_ASN="SYSADMIN" INTEGRATOR_CODE="XXFND_USR_RESPONSIBILITY"
+FNDLOAD apps/<<password>> 0 Y DOWNLOAD $BNE_TOP/patch/115/import/bneintegrator.lct XXFND_USR_RESPONSIBILITY_XINTG.ldt BNE_INTEGRATORS INTEGRATOR_ASN="SYSADMIN" INTEGRATOR_CODE="XXFND_USR_RESPONSIBILITY_XINTG"
   
 ### Oracle Function
 
