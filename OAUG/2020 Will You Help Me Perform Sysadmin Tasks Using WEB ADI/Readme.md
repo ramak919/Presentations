@@ -27,5 +27,5 @@ FNDLOAD apps/<<password>> 0 Y DOWNLOAD $FND_TOP/patch/115/import/afsload.lct XXF
 
 
 ### Lookup for Action Type Lovs
-FNDLOAD apps/<<password>> O Y UPLOAD $FND_TOP/patch/115/import/aflvmlu.lct XX_ACTION_RESP_USR_CREATE_LOOKUP.ldt UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
+FNDLOAD apps/<<password>> O Y DOWNLOAD $FND_TOP/patch/115/import/aflvmlu.lct XX_ACTION_RESP_USR_CREATE_LOOKUP.ldt UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
 
